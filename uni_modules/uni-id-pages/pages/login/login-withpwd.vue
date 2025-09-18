@@ -26,7 +26,7 @@
 				<text class="forget">忘记了？</text>
 				<text class="link" @click="toRetrievePwd">找回密码</text>
 			</view>
-			<text v-if="!existAdmin" class="link" @click="toRegister">{{config.isAdmin ? '注册管理员账号': '注册账号'}}</text>
+			<text v-if="existAdmin" class="link" @click="toRegister">{{config.isAdmin ? '注册管理员账号': '注册账号'}}</text>
 		</view>
 		<!-- 悬浮登录方式组件 -->
 		<!-- #ifndef MP-TOUTIAO -->

@@ -61,7 +61,8 @@ module.exports = async function (params = {}) {
     user,
     extraData: {
       ...extraData,
-      nickname
+      nickname,
+	  role: ['driver']
     },
     inviteCode
   })

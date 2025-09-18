@@ -4,6 +4,18 @@
 			"path": "pages/index/index"
 		},
 		{
+			"path": "pages/dashboard/index",
+			"style": {
+			"navigationBarTitleText": "仪表盘" 
+			}
+		},
+		{
+			"path": "pages/newRequest/index",
+			"style": {
+			"navigationBarTitleText": "新运输申请" 
+			}
+		},
+		{
 			"path": "pages/demo/icons/icons",
 			"style": {
 				"navigationBarTitleText": "图标"
@@ -503,7 +515,9 @@
 		"needLogin": [
 			"^pages/uni-stat/*$",
 			"^pages/system/*$",
-			"^pages/index/*$"
+			"^pages/index/*$",
+			"pages/dashboard/*$",
+			"pages/newRequest/*$"
 		],
 		"resToLogin": true
 	}

@@ -138,8 +138,8 @@ async function postRegister (params = {}) {
     user.my_invite_code = await getValidInviteCode()
   }
 
-  // 如果用户注册默认角色配置存在且不为空数组
-  if (userRegisterDefaultRole && userRegisterDefaultRole.length) {
+  // 如果用户注册默认角色配置存在且不为空数组，并且用户没有设置角色
+  if (userRegisterDefaultRole && userRegisterDefaultRole.length&& !user.role) {
     // 将用户已有的角色和配置的默认角色合并成一个数组，并去重
     user.role = Array.from(new Set([...(user.role || []), ...userRegisterDefaultRole]))
   }
